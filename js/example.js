@@ -58,19 +58,19 @@ var myStyleyearinstall = function(feature) {
 
 var page1 = {
   title: "1 Bike Parking Overview in San Francisco",
-  content: "The current parking space for bikes clusters in the northeastern SF where businesses and shops are. In general there are fewer bike parking places in residential areas, but some neighborhoods have more parking space than others.",
+  content: "The current parking space for bikes clusters in the northeastern SF where businesses and shops are. In general，there are fewer bike parking places in residential areas, but some neighborhoods have more parking space than others.",
   bbox: [[37.68708070686609, -122.53051757812499], [37.82090404811055, -122.32349395751952]]
 }
 
 var page2 = {
   title: "2 Downtown and Chinatown",
-  content: "let's zoom in to see the installation year and racks in the downtown and Chinatown area. Most of the parking with the most racks were built before 2015. Not all of them distribute along roadways or intersections, a bunch of them located inside blocks.",
+  content: "Zoom in to see the installation year and capacity in the downtown and Chinatown area. Most of the parking with the most racks were built before 2015. Not all of them distribute along roadways or intersections, a bunch of them locate inside blocks.",
   bbox: [[37.77641361883315, -122.431640625], [37.80218877920469, -122.3832321166992]]
 }
 
 var page3 = {
   title: "3 Mission District",
-  content: "Mission district is an neighborhood near downtown with Latino roots and a hipster vibe. It's a popular weekend hangout with skyline views. Bike parking spaces concentrate more on main streets compared with the downtown area. Some parking spaces with the most racks are either built before 2005 or at 2020.",
+  content: "Mission district is an neighborhood near downtown with Latino roots and a hipster vibe. It's a popular weekend hangout with skyline views. Bike parking spaces concentrate more on main streets compared with the downtown area. Some parking spaces with the most racks were either built before 2005 or in 2020.",
   bbox: [[37.74655746554895, -122.43129730224608], [37.77098612371078, -122.40297317504881]]
 }
 
@@ -82,13 +82,13 @@ var page4 = {
 
 var page5 = {
   title: "5 Richest Neighborhood - Presidio Heights",
-  content: "Presidio Heights is the neighborhood with the highest median household income in the area. It's located at the northern part the SF. It's biggest bike parking space was built before 2005. Two newly built bike parking spaces have only one rack and are located along a main street.",
+  content: "Presidio Heights is the neighborhood with the highest median household income in the area. It's located at the northern part the SF. It's biggest bike parking space was built before 2005. Two newly built bike parking spaces have only one rack and are located along or near a main street.",
   bbox: [[37.78502894901508, -122.46140241622925], [37.79226979819359, -122.44513750076294]]
 }
 
 var page6 = {
-  title: "Distribution of New Parking Space with No Less Than 6 Racks",
-  content: "There are four bike parking spaces in total built after 2018 with at least 6 racks. Almost all of them are in downtown and Chinatown area.s",
+  title: "6 Distribution of New Parking Space with No Less Than 6 Racks",
+  content: "There are four bike parking spaces in total built after 2018 with at least 6 racks. Almost all of them are in downtown and Chinatown area.",
   bbox: [[37.68708070686609, -122.53051757812499], [37.82090404811055, -122.32349395751952]],
   filterfun:function(row){return Number(row.properties.install_yr) > 2018 && row.properties.racks >= 6}
 }
